@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="data:,">
+        <title>PaletteCore</title>
+    </head>
+    <body>
+        <!-- First Container which will <main></main> -->
+
+        <main>
+            <div class="color-headerContent">
+                <form class="container"><div></div>
+                    <input type="color" id="color-picker" class="form-item" value="#FFFF"></body>
+                    <select id="color-dropdown" class="color-dropdown">
+                        <option>Monochrome-dark</option>
+                        <option>Monochrome-light</option>
+                        <option>Analogic</option>
+                        <option>Complement</option>
+                        <option>Analogic-complement</option>
+                        <option>Triad</option>
+                    </select>
+                    <button type="button" id="colorBtn" class="color-btn">Get color scheme</button>
+                    <button type="button" id="change-color"></button>
+                </form>
+                
+            </div>
+            <!-- Clipboard for copying the hex code for each color produced by the color scheme picked -->
+            <div id="copy-hexcode"></div>
+            <!-- A color container where all the 7 colors will be displayed on the screen-->
+            <div id="color-container" class="color-container">
+                <div class="colors" id="color0"></div>
+                <div class="colors" id="color1"></div>
+                <div class="colors" id="color2"></div>
+                <div class="colors" id="color3"></div>
+                <div class="colors" id="color4"></div>
+            </div>
+
+            <!-- A hex-container for where all the hex codes will show up on the screen-->
+            <div id="hex-container" class="hex-container">
+            <div class="hex" id="h0"></div> 
+            <div class="hex" id="h1"></div> 
+            <div class="hex" id="h2"></div>
+            <div class="hex" id="h3"></div> 
+            <div class="hex" id="h4"></div> 
+            </div>
+            
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,144 @@
+html{
+    height:100%;
+}
+body{
+    box-sizing:border-box;
+    height:100%;
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+   
+    color:#111827;
+}
+
+main{
+ height:90%;
+ height:100%;
+ background:#ffffff;
+
+}
+
+.dark-color{
+    background:#1F2937;
+}
+.color-headerContent{
+    overflow:hidden;
+    width:100%;
+    z-index:1;/*Don't know the reason behind this.might change it later*/
+}
+
+.container{
+    padding:1.5em;
+    border:2px solid grey;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+
+.color-picker{
+    width:70px;
+    height:50px;
+    border:1px solid #D1D5DB;
+    border-radius:2px;
+    
+}
+
+.color-picker::-webkit-color-swatch{
+    border:0.1em solid white;
+}
+
+.color-picker,.color-btn:hover{
+    cursor:pointer;
+}
+
+/* Perfect way of making your input color look sleek and beautifully pleasing.
+  I got it from marth blog(got it stackoverflow) */
+/* input[type="color"]{
+    width:65px;
+    min-width:65px;
+    height:7vh;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border:0.1em solid white;
+} */
+
+.color-dropdown,
+.color-btn{
+    border-radius:7px;
+    border:1px solid #D1D5DB;
+
+}
+.color-dropdown{
+   font-size:1.2rem;
+   width:350px;
+   padding:.7em;
+
+}
+
+.color-btn{
+    font-size:.9rem;
+    padding:1em;
+  
+}
+/* Clipboard for copying the hex code */
+.copy-hexcode{
+    height:4%;
+    font-size:0.9em;
+    color:rgb(219,219,219);
+    padding: bottom 4px;
+    opacity:85%
+}
+
+.color-container,
+.hex-container{
+    overflow:hidden;
+}
+#color-container{
+    overflow:hidden; /*To prevent text or element from exceeding its width and height and fold to adjust to the width and height */
+    height:75%;
+    display:flex;
+    z-index:0; /* Check more on this */
+     
+    margin-bottom:0;
+}
+
+
+
+/* Gives each of the colors an overflow:hidden-(to prevent unwanted scrollbars) and width-(for color width) */
+.colors,.hex{
+   width:20%;
+   
+}
+
+.colors{
+    overflow:hidden;
+    
+}
+#hex-container{
+    display:flex;
+    align-items: center;
+    height:7%;
+    width:100%;
+    background: inherit;
+    
+    
+}
+
+
+.hex{
+    font-size:1rem;
+    font-weight:600;
+    color:#111827;
+    text-align:center;
+    padding:3px;
+    opacity:85%;
+}
+.change{
+  color:#ffffff;
+}
+.color,.hex:hover{
+    cursor:pointer;
+}
