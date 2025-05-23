@@ -26,17 +26,36 @@ function getColorScheme(){
 
          
       }
+      changeColor= document.getElementById('change-color')
+      changeColor.addEventListener('click',changeBackgroundColor)
+
+      function changeBackgroundColor(){
+         changeColor.style.background:
+         const body=document.querySelector('main')
+         body.classList.toggle('dark-color')
+         const colorDropdown = document.querySelector('.color-dropdown')
+         const colorBtn = document.querySelector('.color-btn')
+         if((colorDropdown.style.backgroundColor="#ffffff")&& (colorBtn.style.color="#ffffff")){
+            console.log('Definitely working')
+         }
+         
+         for(let i=0; i<5; i++){
+
+            const hexCodes = document.getElementById(`h${i}`)
+           
+            if(hexCodes.style.color="#111827"){
+            console.log(hexCodes.style.color)
+              hexCodes.style.color="#ffffff"
+            }
+      
+         }
+           
+         
+         
+        
+      }
    
    })
    
 }
 
-document.getElementById('change-color').addEventListener('click',changeBackgroundColor)
-
-function changeBackgroundColor(){
-   const body=document.querySelector('main')
-   body.classList.toggle('dark-color')
-   hex = document.querySelector('.hex')
-   console.log(hex.classList.toggle('change'))
-
-}
