@@ -26,13 +26,15 @@ function getColorScheme(){
 
          
       }
+
+      //Toggle Button
       changeColor= document.getElementById('change-color')
       changeColor.addEventListener('click',changeBackgroundColor)
 
       function changeBackgroundColor(){
-         changeColor.style.background:
-         const body=document.querySelector('main')
-         body.classList.toggle('dark-color')
+     
+         const main =document.querySelector('main')
+         main.classList.toggle('dark-color')
          const colorDropdown = document.querySelector('.color-dropdown')
          const colorBtn = document.querySelector('.color-btn')
          if((colorDropdown.style.backgroundColor="#ffffff")&& (colorBtn.style.color="#ffffff")){
@@ -44,15 +46,13 @@ function getColorScheme(){
             const hexCodes = document.getElementById(`h${i}`)
            
             if(hexCodes.style.color="#111827"){
-            console.log(hexCodes.style.color)
+           
               hexCodes.style.color="#ffffff"
             }
       
          }
            
          
-         
-        
       }
    
    })
